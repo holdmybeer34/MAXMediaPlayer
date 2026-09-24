@@ -1,5 +1,4 @@
-#include "mainwindow.hpp"
-
+#include "objects.hpp"
 #include <QApplication>
 
 int main(int argc, char** argv) {

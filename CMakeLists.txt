@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 project(MediaPlayer
-    VERSION 1.0.2
+    VERSION 1.0.4
     LANGUAGES CXX
 )
 
@@ -14,8 +14,13 @@ find_package(ALSA REQUIRED)
 
 add_executable(MediaPlayer
     main.cpp
-    mainwindow.cpp
+    objects.cpp
+    audio.cpp
 )
-target_link_libraries(MediaPlayer PRIVATE 
+target_link_libraries(MediaPlayer PRIVATE
     Qt6::Widgets
+    ALSA::ALSA
+    pthread
 )
+
+#snd_pcm_writei(pcm, info.buffer, info.samples / info.channels);
