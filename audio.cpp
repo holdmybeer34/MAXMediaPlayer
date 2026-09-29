@@ -46,9 +46,9 @@ void AudioPlayer::play(const QString& path){
         snd_pcm_hw_params(pcm, hw);
 
         const int channels  = info.channels;
-        int16_t*  ptr       = info.buffer;
+        int16_t*  ptr = info.buffer;
         size_t    frames_left = info.samples / channels;
-        const size_t chunk  = 1024;
+        const size_t chunk = 1024;
 
         while (frames_left > 0) {
             size_t to_write = std::min(chunk, frames_left);
