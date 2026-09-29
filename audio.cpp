@@ -43,11 +43,15 @@ void AudioPlayer::play(const QString& path){
         snd_pcm_hw_params_set_rate_near(pcm, hw, &rate, 0);
         snd_pcm_hw_params_set_channels(pcm, hw, info.channels);
         snd_pcm_hw_params(pcm, hw);
+        
 
         const int channels  = info.channels;
         int16_t* ptr = info.buffer;
-        size_t frames_left = info.samples / channels;
+        size_t total_frames = info.samples / channels;
+        size_t frames_left = total_frames;
         const size_t chunk = 1024;
+
+        emit progressChanged(0);
 
         while (frames_left > 0) {
             size_t to_write = std::min(chunk, frames_left);
@@ -60,6 +64,10 @@ void AudioPlayer::play(const QString& path){
 
             ptr += written * channels;
             frames_left -= written;
+
+            size_t done = total_frames - frames_left;
+            int percent = int(100.0 * done / total_frames);
+            emit progressChanged(percent);
         }
 
         snd_pcm_drain(pcm);

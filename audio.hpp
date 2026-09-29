@@ -2,7 +2,6 @@
 #include <QObject>
 #include <QString>
 
-
 class AudioPlayer : public QObject {
     Q_OBJECT
 
@@ -10,9 +9,12 @@ class AudioPlayer : public QObject {
         explicit AudioPlayer(QObject* parent = nullptr);
         void play(const QString& path);
 
+    signals:
+        void progressChanged(int percent);
+
     public slots:
         void ButtonPPFunc();
-    
+
     private:
         bool isPlaying = false;
         bool isPaused = false;

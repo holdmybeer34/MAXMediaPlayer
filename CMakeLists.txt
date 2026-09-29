@@ -15,7 +15,9 @@ find_package(ALSA REQUIRED)
 add_executable(MediaPlayer
     main.cpp
     objects.cpp
+    objects.hpp
     audio.cpp
+    audio.hpp
 )
 target_link_libraries(MediaPlayer PRIVATE
     Qt6::Widgets
