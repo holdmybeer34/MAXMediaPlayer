@@ -22,5 +22,3 @@ target_link_libraries(MediaPlayer PRIVATE
     ALSA::ALSA
     pthread
 )
-
-#snd_pcm_writei(pcm, info.buffer, info.samples / info.channels);

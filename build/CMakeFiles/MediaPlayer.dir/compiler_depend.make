@@ -77,7 +77,6 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
   /usr/include/c++/15/bits/specfun.h \
   /usr/include/c++/15/bits/std_abs.h \
   /usr/include/c++/15/bits/std_function.h \
-  /usr/include/c++/15/bits/std_mutex.h \
   /usr/include/c++/15/bits/stl_algo.h \
   /usr/include/c++/15/bits/stl_algobase.h \
   /usr/include/c++/15/bits/stl_bvector.h \
@@ -106,7 +105,6 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
   /usr/include/c++/15/bits/string_view.tcc \
   /usr/include/c++/15/bits/stringfwd.h \
   /usr/include/c++/15/bits/uniform_int_dist.h \
-  /usr/include/c++/15/bits/unique_lock.h \
   /usr/include/c++/15/bits/unique_ptr.h \
   /usr/include/c++/15/bits/unordered_map.h \
   /usr/include/c++/15/bits/unordered_set.h \
@@ -149,7 +147,6 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
   /usr/include/c++/15/list \
   /usr/include/c++/15/map \
   /usr/include/c++/15/memory \
-  /usr/include/c++/15/mutex \
   /usr/include/c++/15/new \
   /usr/include/c++/15/numeric \
   /usr/include/c++/15/optional \
@@ -3063,6 +3060,8 @@ CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.o:
 
 /usr/include/c++/15/pstl/glue_memory_defs.h:
 
+/usr/include/c++/15/mutex:
+
 /usr/include/c++/15/bits/monostate.h:
 
 MediaPlayer_autogen/EWIEGA46WW/moc_objects.cpp:
@@ -3159,17 +3158,15 @@ MediaPlayer_autogen/mocs_compilation.cpp:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiTargets.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake:
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/lib/x86_64-linux-gnu/libatomic.so.1:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/c++/15/concepts:
 
@@ -3307,6 +3304,12 @@ MediaPlayer_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/15/tr1/riemann_zeta.tcc:
 
+/usr/include/c++/15/tr1/poly_laguerre.tcc:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
+
+/usr/include/c++/15/bits/charconv.h:
+
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/stdint.h:
@@ -3395,14 +3398,6 @@ MediaPlayer_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qttypetraits.h:
 
-/usr/include/c++/15/tr1/poly_laguerre.tcc:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
-
-/usr/include/c++/15/bits/charconv.h:
-
-/usr/include/c++/15/mutex:
-
 /usr/include/c++/15/limits:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/gthr-default.h:
@@ -3450,8 +3445,6 @@ MediaPlayer_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h:
 
 /usr/include/c++/15/bits/list.tcc:
-
-/usr/include/c++/15/ctime:
 
 /home/maxim/Документы/GitHub/MAXMediaPlayer/audio.cpp:
 
@@ -3515,10 +3508,6 @@ MediaPlayer_autogen/moc_predefs.h:
 
 /usr/include/c++/15/bits/exception_defines.h:
 
-/usr/include/alsa/conf.h:
-
-/usr/include/c++/15/bits/enable_special_members.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake:
@@ -3534,6 +3523,12 @@ MediaPlayer_autogen/moc_predefs.h:
 /usr/include/c++/15/bits/basic_string.tcc:
 
 /usr/include/c++/15/bits/streambuf.tcc:
+
+/usr/include/c++/15/bits/std_mutex.h:
+
+/usr/share/cmake-4.2/Modules/Platform/Linux.cmake:
+
+/usr/include/c++/15/bits/erase_if.h:
 
 /usr/include/c++/15/bits/stringfwd.h:
 
@@ -3735,6 +3730,8 @@ MediaPlayer_autogen/EWIEGA46WW/moc_audio.cpp:
 
 /usr/include/c++/15/bits/allocated_ptr.h:
 
+/usr/include/c++/15/ctime:
+
 CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
@@ -3745,27 +3742,11 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/15/bits/node_handle.h:
 
-/usr/share/cmake-4.2/Modules/Platform/Linux.cmake:
-
-/usr/include/c++/15/bits/erase_if.h:
-
-/usr/include/c++/15/bits/std_mutex.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h:
-
 /usr/include/c++/15/debug/debug.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h:
-
-/usr/include/c++/15/bits/stl_list.h:
-
-CMakeFiles/MediaPlayer.dir/audio.cpp.o:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiTargets-none.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h:
 
 /usr/include/c++/15/bits/parse_numbers.h:
 
@@ -3774,6 +3755,10 @@ CMakeFiles/MediaPlayer.dir/audio.cpp.o:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
 
 /usr/include/c++/15/bits/postypes.h:
+
+/usr/include/alsa/conf.h:
+
+/usr/include/c++/15/bits/enable_special_members.h:
 
 /usr/include/c++/15/bits/range_access.h:
 
@@ -3840,6 +3825,14 @@ CMakeFiles/MediaPlayer.dir/audio.cpp.o:
 /usr/include/c++/15/ext/concurrence.h:
 
 /usr/include/c++/15/ext/atomicity.h:
+
+/usr/include/c++/15/bits/stl_list.h:
+
+CMakeFiles/MediaPlayer.dir/audio.cpp.o:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiTargets-none.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h:
 
 /usr/share/cmake-4.2/Modules/CMakeGenericSystem.cmake:
 
@@ -3959,8 +3952,6 @@ CMakeFiles/MediaPlayer.dir/audio.cpp.o:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qlatin1stringview.h:
@@ -3978,6 +3969,8 @@ CMakeFiles/MediaPlayer.dir/audio.cpp.o:
 /home/maxim/Документы/GitHub/MAXMediaPlayer/main.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
@@ -4216,6 +4209,8 @@ CMakeFiles/MediaPlayer.dir/audio.cpp.o:
 /usr/include/c++/15/string_view:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h:
 
@@ -4532,3 +4527,5 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
