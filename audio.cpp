@@ -11,7 +11,6 @@
 AudioPlayer::AudioPlayer(QObject* parent) : QObject(parent){}
 
 void AudioPlayer::ButtonPPFunc(){
-    std::lock_guard<std::mutex> lock(m_mutex);
 
     if(isPlaying == false){
         play("/home/maxim/Prog/MediaPlayer/Music/Caramella Girls - Caramelldansen.mp3");
@@ -46,8 +45,8 @@ void AudioPlayer::play(const QString& path){
         snd_pcm_hw_params(pcm, hw);
 
         const int channels  = info.channels;
-        int16_t*  ptr = info.buffer;
-        size_t    frames_left = info.samples / channels;
+        int16_t* ptr = info.buffer;
+        size_t frames_left = info.samples / channels;
         const size_t chunk = 1024;
 
         while (frames_left > 0) {
@@ -67,7 +66,6 @@ void AudioPlayer::play(const QString& path){
         snd_pcm_close(pcm);
         free(info.buffer);
 
-        std::lock_guard<std::mutex> lock(m_mutex);
         isPlaying = false;
         isPaused = false;
     }).detach();
