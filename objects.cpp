@@ -5,8 +5,6 @@
 #include <QVBoxLayout>
 #include <QStyle>
 
-using namespace Qt;
-
 MainWindow::MainWindow(QWidget* parent):QMainWindow(parent){
 
     setWindowTitle("MediaPlayer");
@@ -20,26 +18,18 @@ MainWindow::MainWindow(QWidget* parent):QMainWindow(parent){
     centralWidget->setPalette(pal);
     centralWidget->setAutoFillBackground(true);
     
-    play = new PlayButton(centralWidget);
+    play = new ButtonPP(centralWidget);
     player = new AudioPlayer(this);
-    connect(play, &QPushButton::clicked, player, &AudioPlayer::ClicktoPlay);
+    connect(play, &QPushButton::clicked, player, &AudioPlayer::ButtonPPFunc);
     
-    pause = new PauseButton(centralWidget);
-    connect(pause, &QPushButton::clicked, player, &AudioPlayer::ClicktoPause);
-
     QVBoxLayout* layout = new QVBoxLayout(centralWidget);
     layout->addStretch(2);
-    layout->addWidget(play, 0, AlignCenter);
+    layout->addWidget(play, 0, Qt::AlignCenter);
     layout->addStretch(1);
 }
 
-PlayButton::PlayButton(QWidget* parent):QPushButton(parent){
+ButtonPP::ButtonPP(QWidget* parent):QPushButton(parent){
     setIcon(style()->standardIcon(QStyle::SP_MediaPlay));
-    setIconSize(QSize(30,30));
-    setFixedSize(50,50);
-}
-
-PauseButton::PauseButton(QWidget* parent):QPushButton(parent){
     setIconSize(QSize(30,30));
     setFixedSize(50,50);
 }

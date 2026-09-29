@@ -5,18 +5,11 @@
 #include <QObject>
 #include <QString>
 
-class PlayButton : public QPushButton {
+class ButtonPP : public QPushButton {
     Q_OBJECT
 
     public:
-    explicit PlayButton(QWidget* parent = nullptr);
-};
-
-class PauseButton : public QPushButton {
-    Q_OBJECT
-
-    public:
-    explicit PauseButton(QWidget* parent = nullptr);
+    explicit ButtonPP(QWidget* parent = nullptr);
 };
 
 class MainWindow : public QMainWindow {
@@ -26,7 +19,6 @@ class MainWindow : public QMainWindow {
     explicit MainWindow(QWidget* parent = nullptr);
 
     private:
-    PlayButton* play;
-    PauseButton* pause;
+    ButtonPP* play;
     AudioPlayer* player;
 };

@@ -11,10 +11,9 @@ class AudioPlayer : public QObject {
         void play(const QString& path);
 
     public slots:
-        void ClicktoPlay();
-        void ClicktoPause();
+        void ButtonPPFunc();
     
     private:
-        volatile bool isPlaying = false;
-        volatile bool isPaused = false;
+        bool isPlaying = false;
+        bool isPaused = false;
 };

@@ -3,7 +3,6 @@
 #include <alsa/asoundlib.h>
 #include <thread>
 #include <cstdlib>
-#include <chrono>
 
 #define MINIMP3_IMPLEMENTATION
 #include "minimp3.hpp"
@@ -11,17 +10,14 @@
 
 AudioPlayer::AudioPlayer(QObject* parent) : QObject(parent){}
 
-void AudioPlayer::ClicktoPlay(){
-    if (isPlaying){
-        return;
-    }
-    play("/home/maxim/Prog/MediaPlayer/Music/Caramella Girls - Caramelldansen.mp3");
-}
+void AudioPlayer::ButtonPPFunc(){
+    std::lock_guard<std::mutex> lock(m_mutex);
 
-void AudioPlayer::ClicktoPause(){
-    if (isPlaying){
+    if(isPlaying == false){
+        play("/home/maxim/Prog/MediaPlayer/Music/Caramella Girls - Caramelldansen.mp3");
+        isPlaying = true;
+    } else {
         isPaused = !isPaused;
-        isPlaying = !isPlaying;
     }
 }
 
@@ -49,36 +45,30 @@ void AudioPlayer::play(const QString& path){
         snd_pcm_hw_params_set_channels(pcm, hw, info.channels);
         snd_pcm_hw_params(pcm, hw);
 
-        long chunk_size = 2048;
-        long total_frames = info.samples / info.channels;
-        long frames_written = 0;
-        short* buffer_ptr = (short*)info.buffer;
+        const int channels  = info.channels;
+        int16_t*  ptr       = info.buffer;
+        size_t    frames_left = info.samples / channels;
+        const size_t chunk  = 1024;
 
-        while(frames_written < total_frames){
-            
-            if (isPaused){
-                while(isPaused) {
-                    std::this_thread::sleep_for(std::chrono::milliseconds(10));
-                }
+        while (frames_left > 0) {
+            size_t to_write = std::min(chunk, frames_left);
+            snd_pcm_sframes_t written = snd_pcm_writei(pcm, ptr, to_write);
+
+            if (written < 0) {
+                snd_pcm_recover(pcm, written, 0);
+                continue;
             }
 
-            long to_write = std::min(chunk_size, total_frames - frames_written);
-            long written = snd_pcm_writei(pcm, buffer_ptr + (frames_written * info.channels), to_write);
-
-            if (written < 0) written = snd_pcm_recover(pcm, written, 0);
-            
-            if (written > 0) {
-                frames_written += written;
-            } 
-            else {
-                break;
-            }
+            ptr += written * channels;
+            frames_left -= written;
         }
 
         snd_pcm_drain(pcm);
         snd_pcm_close(pcm);
         free(info.buffer);
 
+        std::lock_guard<std::mutex> lock(m_mutex);
         isPlaying = false;
+        isPaused = false;
     }).detach();
 }
