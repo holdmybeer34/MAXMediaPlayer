@@ -139,6 +139,7 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
   /usr/include/c++/15/ext/numeric_traits.h \
   /usr/include/c++/15/ext/string_conversions.h \
   /usr/include/c++/15/ext/type_traits.h \
+  /usr/include/c++/15/filesystem \
   /usr/include/c++/15/functional \
   /usr/include/c++/15/initializer_list \
   /usr/include/c++/15/iosfwd \
@@ -285,6 +286,7 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
   /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDir \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
@@ -300,6 +302,7 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \
@@ -316,6 +319,7 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcheckedint_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h \
@@ -333,11 +337,17 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdirlisting.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qexceptionhandling.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qforeach.h \
@@ -350,6 +360,7 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlatin1stringview.h \
@@ -377,6 +388,7 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocessordetection.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
@@ -412,6 +424,7 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtnoop.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtpreprocessorsupport.h \
@@ -464,16 +477,31 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
@@ -760,13 +788,41 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreMacros.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreDependencies.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigVersion.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTargetHelpers.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomPurlHelpers.cmake:
+
+/usr/share/cmake-4.2/Modules/Platform/Linux-GNU-CXX.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomFileHelpers.cmake:
+
+/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomDepHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/c++/15/concepts:
 
@@ -779,6 +835,8 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
@@ -822,6 +880,10 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomPythonHelpers.cmake:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h:
+
 /usr/include/strings.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h:
@@ -842,6 +904,8 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
 
 /usr/include/c++/15/list:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h:
+
 /usr/include/linux/posix_types.h:
 
 /usr/share/cmake-4.2/Modules/CMakeCXXInformation.cmake:
@@ -849,6 +913,8 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:
 
 /usr/include/features.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets-none.cmake:
 
@@ -890,6 +956,10 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
 
 /usr/include/stdint.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreTargets.cmake:
+
+/usr/include/endian.h:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake:
 
 /usr/include/linux/limits.h:
@@ -907,6 +977,16 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
 /usr/include/time.h:
 
 /usr/include/c++/15/tr1/hypergeometric.tcc:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfig.cmake:
+
+/usr/include/c++/15/tr1/bessel_function.tcc:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
@@ -934,8 +1014,6 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
 
 /usr/include/c++/15/pstl/execution_defs.h:
 
-/usr/include/c++/15/optional:
-
 /usr/include/c++/15/bits/predefined_ops.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
@@ -952,15 +1030,29 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/gthr-default.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTestHelpers.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake:
+
+CMakeFiles/4.2.3/CMakeSystem.cmake:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h:
 
 /usr/include/c++/15/functional:
 
+/home/maxim/Документы/GitHub/MAXMediaPlayer/audio.cpp:
+
+/usr/share/cmake-4.2/Modules/Compiler/GNU.cmake:
+
+/usr/include/c++/15/bits/requires_hosted.h:
+
 /usr/include/c++/15/ext/string_conversions.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreDependencies.cmake:
-
 /usr/include/c++/15/ext/numeric_traits.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomHelpers.cmake:
+
+/usr/include/c++/15/bits/exception_ptr.h:
 
 /usr/include/linux/types.h:
 
@@ -984,21 +1076,11 @@ MediaPlayer_autogen/timestamp: /home/maxim/Документы/GitHub/MAXMediaPla
 
 /usr/include/c++/15/ext/aligned_buffer.h:
 
-/usr/include/c++/15/bits/exception_ptr.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomHelpers.cmake:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h:
 
 /usr/include/c++/15/bits/list.tcc:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h:
-
-/home/maxim/Документы/GitHub/MAXMediaPlayer/audio.cpp:
-
-/usr/share/cmake-4.2/Modules/Compiler/GNU.cmake:
-
-/usr/include/c++/15/bits/requires_hosted.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
@@ -1074,9 +1156,9 @@ MediaPlayer_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h:
 
-/usr/include/c++/15/tuple:
-
 /usr/include/c++/15/array:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h:
 
 /home/maxim/Документы/GitHub/MAXMediaPlayer/objects.hpp:
 
@@ -1113,6 +1195,8 @@ MediaPlayer_autogen/moc_predefs.h:
 /usr/include/c++/15/bits/hash_bytes.h:
 
 /usr/include/c++/15/algorithm:
+
+/usr/include/c++/15/filesystem:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h:
 
@@ -1154,6 +1238,10 @@ MediaPlayer_autogen/moc_predefs.h:
 
 /usr/include/stdc-predef.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWindowsHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h:
+
 /usr/include/c++/15/bits/stl_tempbuf.h:
 
 /usr/include/c++/15/bits/stl_relops.h:
@@ -1161,8 +1249,6 @@ MediaPlayer_autogen/moc_predefs.h:
 /usr/include/c++/15/bits/atomic_lockfree_defines.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QList:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTargetHelpers.cmake:
 
 /usr/include/c++/15/bits/localefwd.h:
 
@@ -1175,8 +1261,6 @@ MediaPlayer_autogen/moc_predefs.h:
 /usr/include/c++/15/typeinfo:
 
 /usr/include/c++/15/bits/std_abs.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers_v2.cmake:
 
@@ -1220,6 +1304,8 @@ MediaPlayer_autogen/moc_predefs.h:
 
 /usr/include/c++/15/ctime:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h:
+
 CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
@@ -1239,8 +1325,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/15/bits/parse_numbers.h:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
 
 /usr/include/c++/15/bits/postypes.h:
 
@@ -1364,6 +1448,10 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/15/bits/concept_check.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/q20memory.h:
+
 /usr/include/c++/15/bits/version.h:
 
 /usr/include/c++/15/bits/utility.h:
@@ -1381,16 +1469,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/15/bits/vector.tcc:
 
 /usr/include/c++/15/climits:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake:
-
-/usr/include/c++/15/pstl/glue_numeric_defs.h:
-
-/usr/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomDepHelpers.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomPurlHelpers.cmake:
 
 /usr/include/c++/15/bits/stl_algo.h:
 
@@ -1422,6 +1500,12 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qlatin1stringview.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
@@ -1434,13 +1518,15 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
+/usr/include/c++/15/tuple:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h:
+
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
@@ -1468,6 +1554,12 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomOpsHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h:
+
 /usr/include/x86_64-linux-gnu/c++/15/bits/error_constants.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtdeprecationmarkers.h:
@@ -1475,6 +1567,12 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/c++/15/bits/gthr.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake:
+
+/usr/include/c++/15/pstl/glue_numeric_defs.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QDir:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject:
 
@@ -1536,13 +1634,13 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h:
+
 /usr/include/c++/15/bits/stl_iterator_base_types.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcheckedint_impl.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreMacros.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h:
 
@@ -1562,15 +1660,29 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerfwd.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h:
 
 /usr/include/c++/15/variant:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qdir.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qdirlisting.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h:
 
@@ -1594,6 +1706,8 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h:
@@ -1609,10 +1723,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmalloc.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomPythonHelpers.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h:
 
@@ -1676,10 +1786,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h:
 
-/usr/include/endian.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreTargets.cmake:
-
 /usr/include/c++/15/bits/stl_vector.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringbuilder.h:
@@ -1714,7 +1820,19 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreglobal.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtdeprecationdefinitions.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake:
+
+/usr/include/c++/15/bits/stl_algobase.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h:
 
 /usr/include/c++/15/bits/stl_iterator_base_funcs.h:
 
@@ -1758,12 +1876,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h:
 
-CMakeFiles/4.2.3/CMakeSystem.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTestHelpers.cmake:
-
 /usr/share/cmake-4.2/Modules/Platform/Linker/GNU.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h:
@@ -1774,15 +1886,17 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicToolHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h:
 
 /usr/share/cmake-4.2/Modules/FindPackageMessage.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h:
 
@@ -1792,7 +1906,7 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWindowsHelpers.cmake:
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigExtras.cmake:
 
@@ -1804,13 +1918,33 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6VersionlessAliasTargets.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h:
+
+/usr/include/c++/15/optional:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h:
 
@@ -1826,9 +1960,9 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h:
 
-/usr/include/c++/15/system_error:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreTargets-none.cmake:
+
+/usr/include/c++/15/system_error:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersionImpl.cmake:
 
@@ -1869,53 +2003,3 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomDocumentNamespaceHelpers.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomFileHelpers.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
-
-/usr/include/c++/15/bits/stl_algobase.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake:
-
-/usr/share/cmake-4.2/Modules/Platform/Linux-GNU-CXX.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake:
-
-/usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomOpsHelpers.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicToolHelpers.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/q20memory.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
-
-/usr/include/c++/15/tr1/bessel_function.tcc:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfig.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigVersion.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake:

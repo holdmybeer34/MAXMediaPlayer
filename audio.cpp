@@ -12,10 +12,14 @@
 
 AudioPlayer::AudioPlayer(QObject* parent) : QObject(parent){}
 
-void AudioPlayer::ButtonPPFunc(){
+void AudioPlayer::setPath(const QString& path){
+    currentPath = path;
+}
+
+void AudioPlayer::playSelected(){
     if(isPlaying == false){
         isPlaying = true;
-        play("/home/maxim/Документы/GitHub/MAXMediaPlayer/Music/prowler-sound-effect_6bXErot.mp3");
+        play(currentPath);
     } 
     else {
         isPaused = !isPaused;

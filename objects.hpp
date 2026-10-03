@@ -2,17 +2,10 @@
 #include "audio.hpp"
 #include <QMainWindow>
 #include <QPushButton>
-#include <QObject>
-#include <QString>
 #include <QWidget>
 #include <QPaintEvent>
-
-class ButtonPP : public QPushButton {
-    Q_OBJECT
-
-    public:
-        explicit ButtonPP(QWidget* parent = nullptr);
-};
+#include <QListWidget>
+#include <QDir>
 
 class ProgressBar : public QWidget {
     Q_OBJECT
@@ -30,14 +23,39 @@ class ProgressBar : public QWidget {
         int percent_ = 0;
 };
 
+class PlaylistPanel : public QWidget {
+    Q_OBJECT
+
+    public:
+        explicit PlaylistPanel(QWidget* parent = nullptr);
+
+        void loadDirectory(const QString& directory);
+
+    signals:
+        void trackSelected(const QString& filepath);
+
+    private slots:
+        void onItemClicked(QListWidgetItem* item);
+
+    private:
+        QListWidget* playlist;
+};
+
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
     public:
         explicit MainWindow(QWidget* parent = nullptr);
 
+    private slots:
+        void togglePlaylist();
+
     private:
-        ButtonPP* play;
+        QWidget* playerPage;
+        PlaylistPanel* playlistPanel;
+        QPushButton* switchButton;
+
+        QPushButton* play;
         AudioPlayer* player;
         ProgressBar* progress;
 };

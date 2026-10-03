@@ -8,14 +8,16 @@ class AudioPlayer : public QObject {
     public:
         explicit AudioPlayer(QObject* parent = nullptr);
         void play(const QString& path);
-
+        
     signals:
         void progressChanged(int percent);
 
     public slots:
-        void ButtonPPFunc();
+        void setPath(const QString& path);
+        void playSelected();
 
     private:
+        QString currentPath;
         bool isPlaying = false;
         bool isPaused = false;
 };
