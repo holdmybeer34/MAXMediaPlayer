@@ -120,9 +120,11 @@ template <> constexpr inline auto PlaylistPanel::qt_create_metaobjectdata<qt_met
         "trackSelected",
         "",
         "filepath",
+        "trackDoubleClicked",
         "onItemClicked",
         "QListWidgetItem*",
-        "item"
+        "item",
+        "onitemDoubleClicked"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -130,9 +132,17 @@ template <> constexpr inline auto PlaylistPanel::qt_create_metaobjectdata<qt_met
         QtMocHelpers::SignalData<void(const QString &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QString, 3 },
         }}),
+        // Signal 'trackDoubleClicked'
+        QtMocHelpers::SignalData<void(const QString &)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 3 },
+        }}),
         // Slot 'onItemClicked'
-        QtMocHelpers::SlotData<void(QListWidgetItem *)>(4, 2, QMC::AccessPrivate, QMetaType::Void, {{
-            { 0x80000000 | 5, 6 },
+        QtMocHelpers::SlotData<void(QListWidgetItem *)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 6, 7 },
+        }}),
+        // Slot 'onitemDoubleClicked'
+        QtMocHelpers::SlotData<void(QListWidgetItem *)>(8, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 6, 7 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -158,12 +168,16 @@ void PlaylistPanel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->trackSelected((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
-        case 1: _t->onItemClicked((*reinterpret_cast<std::add_pointer_t<QListWidgetItem*>>(_a[1]))); break;
+        case 1: _t->trackDoubleClicked((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
+        case 2: _t->onItemClicked((*reinterpret_cast<std::add_pointer_t<QListWidgetItem*>>(_a[1]))); break;
+        case 3: _t->onitemDoubleClicked((*reinterpret_cast<std::add_pointer_t<QListWidgetItem*>>(_a[1]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (PlaylistPanel::*)(const QString & )>(_a, &PlaylistPanel::trackSelected, 0))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (PlaylistPanel::*)(const QString & )>(_a, &PlaylistPanel::trackDoubleClicked, 1))
             return;
     }
 }
@@ -187,14 +201,14 @@ int PlaylistPanel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 4;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 4;
     }
     return _id;
 }
@@ -203,6 +217,12 @@ int PlaylistPanel::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void PlaylistPanel::trackSelected(const QString & _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1);
+}
+
+// SIGNAL 1
+void PlaylistPanel::trackDoubleClicked(const QString & _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 1, nullptr, _t1);
 }
 namespace {
 struct qt_meta_tag_ZN10MainWindowE_t {};

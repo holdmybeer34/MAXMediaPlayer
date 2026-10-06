@@ -44,7 +44,8 @@ template <> constexpr inline auto AudioPlayer::qt_create_metaobjectdata<qt_meta_
         "percent",
         "setPath",
         "path",
-        "playSelected"
+        "playSelected",
+        "forcedStop"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -58,6 +59,8 @@ template <> constexpr inline auto AudioPlayer::qt_create_metaobjectdata<qt_meta_
         }}),
         // Slot 'playSelected'
         QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPublic, QMetaType::Void),
+        // Slot 'forcedStop'
+        QtMocHelpers::SlotData<void()>(7, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -84,6 +87,7 @@ void AudioPlayer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         case 0: _t->progressChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
         case 1: _t->setPath((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
         case 2: _t->playSelected(); break;
+        case 3: _t->forcedStop(); break;
         default: ;
         }
     }
@@ -112,14 +116,14 @@ int AudioPlayer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }

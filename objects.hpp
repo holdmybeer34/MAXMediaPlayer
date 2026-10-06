@@ -28,14 +28,15 @@ class PlaylistPanel : public QWidget {
 
     public:
         explicit PlaylistPanel(QWidget* parent = nullptr);
-
         void loadDirectory(const QString& directory);
 
     signals:
         void trackSelected(const QString& filepath);
+        void trackDoubleClicked(const QString& filepath);
 
-    private slots:
+    public slots:
         void onItemClicked(QListWidgetItem* item);
+        void onitemDoubleClicked(QListWidgetItem* item);
 
     private:
         QListWidget* playlist;
@@ -53,9 +54,10 @@ class MainWindow : public QMainWindow {
     private:
         QWidget* playerPage;
         PlaylistPanel* playlistPanel;
-        QPushButton* switchButton;
+        QPushButton* playlistButton;
 
         QPushButton* play;
+        QPushButton* stop;
         AudioPlayer* player;
         ProgressBar* progress;
 };

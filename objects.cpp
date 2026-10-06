@@ -60,9 +60,18 @@ void PlaylistPanel::loadDirectory(const QString& directory){
         item->setData(Qt::UserRole, file.absoluteFilePath());
         playlist->addItem(item);
     }
+
+    playlist->setCurrentRow(0);
+    QListWidgetItem* first = playlist->item(0);
+    emit trackSelected(first->data(Qt::UserRole).toString());
 }
 
 void PlaylistPanel::onItemClicked(QListWidgetItem* item) {
+    QString path = item->data(Qt::UserRole).toString();
+    emit trackSelected(path);
+}
+
+void PlaylistPanel::onitemDoubleClicked(QListWidgetItem* item){
     QString path = item->data(Qt::UserRole).toString();
     emit trackSelected(path);
 }
@@ -111,33 +120,78 @@ MainWindow::MainWindow(QWidget* parent):QMainWindow(parent){
         layout->setContentsMargins(10,10,10,10);
 
         QHBoxLayout* topBar = new QHBoxLayout();
-        topBar->addStretch(1);
 
-        switchButton = new QPushButton("≡", playerPage);
-        switchButton->setFixedSize(40, 40);
-        topBar->addWidget(switchButton);
+        playlistButton = new QPushButton("≡", playerPage);
+        playlistButton->setFixedSize(25, 25);
+
+        topBar->addStretch(1);
+        topBar->addWidget(playlistButton);
+
+        QHBoxLayout* buttonsLayout = new QHBoxLayout();
 
         play = new QPushButton("▶", playerPage);
-        progress = new ProgressBar(centralWidget);
+        play->setFixedSize(40,40);
+        stop = new QPushButton("■", playerPage);
+        stop->setFixedSize(40,40);
+
+        buttonsLayout->addStretch(1);
+        buttonsLayout->addWidget(play);
+        buttonsLayout->addSpacing(10);
+        buttonsLayout->addWidget(stop);
+        buttonsLayout->addStretch(1);
+
+        progress = new ProgressBar(playerPage);
 
         layout->addLayout(topBar);
         layout->addStretch(1);
-        layout->addWidget(play, 0, Qt::AlignCenter);
+        layout->addLayout(buttonsLayout);
         layout->addSpacing(20);
         layout->addWidget(progress);
         layout->addStretch(1);
     }
 
+    player = new AudioPlayer(this);
     playlistPanel = new PlaylistPanel(centralWidget);
     playlistPanel->hide();
+
+    connect(
+        playlistPanel,
+        &PlaylistPanel::trackSelected,
+        player,
+        &AudioPlayer::setPath
+    );
+    connect(
+        playlistPanel,
+        &PlaylistPanel::trackDoubleClicked,
+        this, [this](const QString& path){
+            player->setPath(path);
+            player->playSelected();
+            playlistPanel->hide();
+        }
+    );
+    connect(play,
+        &QPushButton::clicked,
+        player,
+        &AudioPlayer::playSelected
+    );
+    connect(player,
+        &AudioPlayer::progressChanged,
+        progress,
+        &ProgressBar::setPercent
+    );
+    connect(stop,
+        &QPushButton::clicked,
+        player,
+        &AudioPlayer::forcedStop
+    );
+
     playlistPanel->loadDirectory("/home/maxim/Документы/GitHub/MAXMediaPlayer/Music");
 
-    player = new AudioPlayer(this);
-
-    connect(switchButton, &QPushButton::clicked, this, &MainWindow::togglePlaylist);
-    connect(playlistPanel, &PlaylistPanel::trackSelected, player, &AudioPlayer::setPath);
-    connect(play, &QPushButton::clicked, player, &AudioPlayer::playSelected);
-    connect(player, &AudioPlayer::progressChanged, progress, &ProgressBar::setPercent);
+    connect(playlistButton,
+        &QPushButton::clicked,
+        this,
+        &MainWindow::togglePlaylist
+    );
 
     mainLayout->addWidget(playerPage, 1);
     mainLayout->addWidget(playlistPanel, 0);
