@@ -13,14 +13,6 @@
 #include <QDir>
 #include <QFileInfo>
 
-void MainWindow::togglePlaylist() {
-    if (playlistPanel->isVisible()) {
-        playlistPanel->hide();
-    } else {
-        playlistPanel->show();
-    }
-}
-
 MainWindow::MainWindow(QWidget* parent):QMainWindow(parent){
 
     setWindowTitle("MediaPlayer");
@@ -121,4 +113,12 @@ MainWindow::MainWindow(QWidget* parent):QMainWindow(parent){
 
     mainLayout->addWidget(playerPage, 1);
     mainLayout->addWidget(playlistPanel, 0);
+}
+
+void MainWindow::togglePlaylist() {
+    if (playlistPanel->isVisible()) {
+        playlistPanel->hide();
+    } else {
+        playlistPanel->show();
+    }
 }
