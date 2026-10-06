@@ -30,17 +30,18 @@ MainWindow::MainWindow(QWidget* parent):QMainWindow(parent){
     mainLayout->setContentsMargins(0,0,0,0);
     mainLayout->setSpacing(0);
 
-
     playerPage = new QWidget(centralWidget);
     {
         QVBoxLayout* playerVlayout = new QVBoxLayout(playerPage);
         playerVlayout->setContentsMargins(10,10,10,10);
 
-        playlistButton = new QPushButton("≡", playerPage);
-        playlistButton->setFixedSize(25, 25);
+        progress = new ProgressBar(playerPage);
 
         QHBoxLayout* topBar = new QHBoxLayout();
         {
+        playlistButton = new QPushButton("≡", playerPage);
+        playlistButton->setFixedSize(25, 25);
+
         topBar->addStretch(1);
         topBar->addWidget(playlistButton);
         }
@@ -57,16 +58,14 @@ MainWindow::MainWindow(QWidget* parent):QMainWindow(parent){
         centreLayout->addSpacing(10);
         centreLayout->addWidget(stop);
         centreLayout->addStretch(1);
+        }
 
-        progress = new ProgressBar(playerPage);
-        
         playerVlayout->addLayout(topBar);
         playerVlayout->addStretch(1);
         playerVlayout->addLayout(centreLayout);
         playerVlayout->addSpacing(20);
         playerVlayout->addWidget(progress);
         playerVlayout->addStretch(1);
-        }
     }
 
     player = new AudioPlayer(this);
