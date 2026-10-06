@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_MAXMediaPlayer_FILE /home/maxim/Документы/GitHub/MAXMediaPlayer/build/MAXMediaPlayer)
-set(__QT_DEPLOY_TARGET_MAXMediaPlayer_TYPE EXECUTABLE)
