@@ -117,98 +117,74 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MediaPlayer
+# Target rules for targets named MAXMediaPlayer
 
 # Build rule for target.
-MediaPlayer: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MediaPlayer
-.PHONY : MediaPlayer
+MAXMediaPlayer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MAXMediaPlayer
+.PHONY : MAXMediaPlayer
 
 # fast build rule for target.
-MediaPlayer/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/build
-.PHONY : MediaPlayer/fast
+MAXMediaPlayer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/build
+.PHONY : MAXMediaPlayer/fast
 
 #=============================================================================
-# Target rules for targets named MediaPlayer_autogen_timestamp_deps
+# Target rules for targets named MAXMediaPlayer_autogen_timestamp_deps
 
 # Build rule for target.
-MediaPlayer_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MediaPlayer_autogen_timestamp_deps
-.PHONY : MediaPlayer_autogen_timestamp_deps
+MAXMediaPlayer_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MAXMediaPlayer_autogen_timestamp_deps
+.PHONY : MAXMediaPlayer_autogen_timestamp_deps
 
 # fast build rule for target.
-MediaPlayer_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer_autogen_timestamp_deps.dir/build.make CMakeFiles/MediaPlayer_autogen_timestamp_deps.dir/build
-.PHONY : MediaPlayer_autogen_timestamp_deps/fast
+MAXMediaPlayer_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer_autogen_timestamp_deps.dir/build.make CMakeFiles/MAXMediaPlayer_autogen_timestamp_deps.dir/build
+.PHONY : MAXMediaPlayer_autogen_timestamp_deps/fast
 
 #=============================================================================
-# Target rules for targets named MediaPlayer_autogen
+# Target rules for targets named MAXMediaPlayer_autogen
 
 # Build rule for target.
-MediaPlayer_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MediaPlayer_autogen
-.PHONY : MediaPlayer_autogen
+MAXMediaPlayer_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MAXMediaPlayer_autogen
+.PHONY : MAXMediaPlayer_autogen
 
 # fast build rule for target.
-MediaPlayer_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer_autogen.dir/build.make CMakeFiles/MediaPlayer_autogen.dir/build
-.PHONY : MediaPlayer_autogen/fast
+MAXMediaPlayer_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer_autogen.dir/build.make CMakeFiles/MAXMediaPlayer_autogen.dir/build
+.PHONY : MAXMediaPlayer_autogen/fast
 
-MediaPlayer_autogen/mocs_compilation.o: MediaPlayer_autogen/mocs_compilation.cpp.o
-.PHONY : MediaPlayer_autogen/mocs_compilation.o
-
-# target to build an object file
-MediaPlayer_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.o
-.PHONY : MediaPlayer_autogen/mocs_compilation.cpp.o
-
-MediaPlayer_autogen/mocs_compilation.i: MediaPlayer_autogen/mocs_compilation.cpp.i
-.PHONY : MediaPlayer_autogen/mocs_compilation.i
-
-# target to preprocess a source file
-MediaPlayer_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.i
-.PHONY : MediaPlayer_autogen/mocs_compilation.cpp.i
-
-MediaPlayer_autogen/mocs_compilation.s: MediaPlayer_autogen/mocs_compilation.cpp.s
-.PHONY : MediaPlayer_autogen/mocs_compilation.s
-
-# target to generate assembly for a file
-MediaPlayer_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/MediaPlayer_autogen/mocs_compilation.cpp.s
-.PHONY : MediaPlayer_autogen/mocs_compilation.cpp.s
-
-audio.o: audio.cpp.o
-.PHONY : audio.o
+MAXMediaPlayer_autogen/mocs_compilation.o: MAXMediaPlayer_autogen/mocs_compilation.cpp.o
+.PHONY : MAXMediaPlayer_autogen/mocs_compilation.o
 
 # target to build an object file
-audio.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/audio.cpp.o
-.PHONY : audio.cpp.o
+MAXMediaPlayer_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/MAXMediaPlayer_autogen/mocs_compilation.cpp.o
+.PHONY : MAXMediaPlayer_autogen/mocs_compilation.cpp.o
 
-audio.i: audio.cpp.i
-.PHONY : audio.i
+MAXMediaPlayer_autogen/mocs_compilation.i: MAXMediaPlayer_autogen/mocs_compilation.cpp.i
+.PHONY : MAXMediaPlayer_autogen/mocs_compilation.i
 
 # target to preprocess a source file
-audio.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/audio.cpp.i
-.PHONY : audio.cpp.i
+MAXMediaPlayer_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/MAXMediaPlayer_autogen/mocs_compilation.cpp.i
+.PHONY : MAXMediaPlayer_autogen/mocs_compilation.cpp.i
 
-audio.s: audio.cpp.s
-.PHONY : audio.s
+MAXMediaPlayer_autogen/mocs_compilation.s: MAXMediaPlayer_autogen/mocs_compilation.cpp.s
+.PHONY : MAXMediaPlayer_autogen/mocs_compilation.s
 
 # target to generate assembly for a file
-audio.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/audio.cpp.s
-.PHONY : audio.cpp.s
+MAXMediaPlayer_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/MAXMediaPlayer_autogen/mocs_compilation.cpp.s
+.PHONY : MAXMediaPlayer_autogen/mocs_compilation.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -216,7 +192,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -224,32 +200,80 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-objects.o: objects.cpp.o
-.PHONY : objects.o
+src/audio/audiobrain.o: src/audio/audiobrain.cpp.o
+.PHONY : src/audio/audiobrain.o
 
 # target to build an object file
-objects.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/objects.cpp.o
-.PHONY : objects.cpp.o
+src/audio/audiobrain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/src/audio/audiobrain.cpp.o
+.PHONY : src/audio/audiobrain.cpp.o
 
-objects.i: objects.cpp.i
-.PHONY : objects.i
+src/audio/audiobrain.i: src/audio/audiobrain.cpp.i
+.PHONY : src/audio/audiobrain.i
 
 # target to preprocess a source file
-objects.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/objects.cpp.i
-.PHONY : objects.cpp.i
+src/audio/audiobrain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/src/audio/audiobrain.cpp.i
+.PHONY : src/audio/audiobrain.cpp.i
 
-objects.s: objects.cpp.s
-.PHONY : objects.s
+src/audio/audiobrain.s: src/audio/audiobrain.cpp.s
+.PHONY : src/audio/audiobrain.s
 
 # target to generate assembly for a file
-objects.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MediaPlayer.dir/build.make CMakeFiles/MediaPlayer.dir/objects.cpp.s
-.PHONY : objects.cpp.s
+src/audio/audiobrain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/src/audio/audiobrain.cpp.s
+.PHONY : src/audio/audiobrain.cpp.s
+
+src/ui/additive.o: src/ui/additive.cpp.o
+.PHONY : src/ui/additive.o
+
+# target to build an object file
+src/ui/additive.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/src/ui/additive.cpp.o
+.PHONY : src/ui/additive.cpp.o
+
+src/ui/additive.i: src/ui/additive.cpp.i
+.PHONY : src/ui/additive.i
+
+# target to preprocess a source file
+src/ui/additive.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/src/ui/additive.cpp.i
+.PHONY : src/ui/additive.cpp.i
+
+src/ui/additive.s: src/ui/additive.cpp.s
+.PHONY : src/ui/additive.s
+
+# target to generate assembly for a file
+src/ui/additive.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/src/ui/additive.cpp.s
+.PHONY : src/ui/additive.cpp.s
+
+src/ui/mainwindow.o: src/ui/mainwindow.cpp.o
+.PHONY : src/ui/mainwindow.o
+
+# target to build an object file
+src/ui/mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/src/ui/mainwindow.cpp.o
+.PHONY : src/ui/mainwindow.cpp.o
+
+src/ui/mainwindow.i: src/ui/mainwindow.cpp.i
+.PHONY : src/ui/mainwindow.i
+
+# target to preprocess a source file
+src/ui/mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/src/ui/mainwindow.cpp.i
+.PHONY : src/ui/mainwindow.cpp.i
+
+src/ui/mainwindow.s: src/ui/mainwindow.cpp.s
+.PHONY : src/ui/mainwindow.s
+
+# target to generate assembly for a file
+src/ui/mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MAXMediaPlayer.dir/build.make CMakeFiles/MAXMediaPlayer.dir/src/ui/mainwindow.cpp.s
+.PHONY : src/ui/mainwindow.cpp.s
 
 # Help Target
 help:
@@ -259,21 +283,24 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... MediaPlayer_autogen"
-	@echo "... MediaPlayer_autogen_timestamp_deps"
-	@echo "... MediaPlayer"
-	@echo "... MediaPlayer_autogen/mocs_compilation.o"
-	@echo "... MediaPlayer_autogen/mocs_compilation.i"
-	@echo "... MediaPlayer_autogen/mocs_compilation.s"
-	@echo "... audio.o"
-	@echo "... audio.i"
-	@echo "... audio.s"
+	@echo "... MAXMediaPlayer_autogen"
+	@echo "... MAXMediaPlayer_autogen_timestamp_deps"
+	@echo "... MAXMediaPlayer"
+	@echo "... MAXMediaPlayer_autogen/mocs_compilation.o"
+	@echo "... MAXMediaPlayer_autogen/mocs_compilation.i"
+	@echo "... MAXMediaPlayer_autogen/mocs_compilation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... objects.o"
-	@echo "... objects.i"
-	@echo "... objects.s"
+	@echo "... src/audio/audiobrain.o"
+	@echo "... src/audio/audiobrain.i"
+	@echo "... src/audio/audiobrain.s"
+	@echo "... src/ui/additive.o"
+	@echo "... src/ui/additive.i"
+	@echo "... src/ui/additive.s"
+	@echo "... src/ui/mainwindow.o"
+	@echo "... src/ui/mainwindow.i"
+	@echo "... src/ui/mainwindow.s"
 .PHONY : help
 
 

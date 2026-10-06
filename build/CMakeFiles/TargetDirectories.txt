@@ -1,5 +1,5 @@
-/home/maxim/Документы/GitHub/MAXMediaPlayer/build/CMakeFiles/MediaPlayer.dir
+/home/maxim/Документы/GitHub/MAXMediaPlayer/build/CMakeFiles/MAXMediaPlayer.dir
 /home/maxim/Документы/GitHub/MAXMediaPlayer/build/CMakeFiles/edit_cache.dir
 /home/maxim/Документы/GitHub/MAXMediaPlayer/build/CMakeFiles/rebuild_cache.dir
-/home/maxim/Документы/GitHub/MAXMediaPlayer/build/CMakeFiles/MediaPlayer_autogen_timestamp_deps.dir
-/home/maxim/Документы/GitHub/MAXMediaPlayer/build/CMakeFiles/MediaPlayer_autogen.dir
+/home/maxim/Документы/GitHub/MAXMediaPlayer/build/CMakeFiles/MAXMediaPlayer_autogen_timestamp_deps.dir
+/home/maxim/Документы/GitHub/MAXMediaPlayer/build/CMakeFiles/MAXMediaPlayer_autogen.dir

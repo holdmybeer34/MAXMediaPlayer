@@ -1,5 +1,4 @@
-build
-Decoder
-Archives
-Music
+.cache
 .vscode
+build
+music

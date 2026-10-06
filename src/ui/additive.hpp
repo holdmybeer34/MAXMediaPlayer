@@ -1,11 +1,11 @@
 #pragma once
-#include "audio.hpp"
 #include <QMainWindow>
 #include <QPushButton>
 #include <QWidget>
 #include <QPaintEvent>
 #include <QListWidget>
 #include <QDir>
+#include <qlistwidget.h>
 
 class ProgressBar : public QWidget {
     Q_OBJECT
@@ -36,28 +36,8 @@ class PlaylistPanel : public QWidget {
 
     public slots:
         void onItemClicked(QListWidgetItem* item);
-        void onitemDoubleClicked(QListWidgetItem* item);
+        void onItemDoubleClicked(QListWidgetItem* item);
 
     private:
         QListWidget* playlist;
-};
-
-class MainWindow : public QMainWindow {
-    Q_OBJECT
-
-    public:
-        explicit MainWindow(QWidget* parent = nullptr);
-
-    private slots:
-        void togglePlaylist();
-
-    private:
-        QWidget* playerPage;
-        PlaylistPanel* playlistPanel;
-        QPushButton* playlistButton;
-
-        QPushButton* play;
-        QPushButton* stop;
-        AudioPlayer* player;
-        ProgressBar* progress;
 };

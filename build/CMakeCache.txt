@@ -14,12 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//The ALSA (asound) include directory
-ALSA_INCLUDE_DIR:PATH=/usr/include
-
-//The ALSA (asound) library
-ALSA_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libasound.so
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -185,7 +179,7 @@ CMAKE_PROJECT_NAME:STATIC=MediaPlayer
 CMAKE_PROJECT_SPDX_LICENSE:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=1.0.4
+CMAKE_PROJECT_VERSION:STATIC=1.0.7
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
@@ -194,7 +188,7 @@ CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
 CMAKE_PROJECT_VERSION_MINOR:STATIC=0
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=4
+CMAKE_PROJECT_VERSION_PATCH:STATIC=7
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
@@ -312,6 +306,12 @@ OPENGL_opengl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libOpenGL.so
 //Path to a file.
 OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
 
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
 //Additional directories where find(Qt6 ...) host Qt components
 // are searched
 QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH:STRING=
@@ -358,15 +358,49 @@ Vulkan_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 Vulkan_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libvulkan.so
 
+//Path to a library.
+pkgcfg_lib_ALSA_asound:FILEPATH=/usr/lib/x86_64-linux-gnu/libasound.so
+
 
 ########################
 # INTERNAL cache entries
 ########################
 
-//ADVANCED property for variable: ALSA_INCLUDE_DIR
-ALSA_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: ALSA_LIBRARY
-ALSA_LIBRARY-ADVANCED:INTERNAL=1
+ALSA_CFLAGS:INTERNAL=-I/usr/include
+ALSA_CFLAGS_I:INTERNAL=
+ALSA_CFLAGS_OTHER:INTERNAL=
+ALSA_FOUND:INTERNAL=1
+ALSA_INCLUDEDIR:INTERNAL=/usr/include
+ALSA_INCLUDE_DIRS:INTERNAL=/usr/include
+ALSA_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lasound
+ALSA_LDFLAGS_OTHER:INTERNAL=
+ALSA_LIBDIR:INTERNAL=/usr/lib/x86_64-linux-gnu
+ALSA_LIBRARIES:INTERNAL=asound
+ALSA_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+ALSA_LIBS:INTERNAL=
+ALSA_LIBS_L:INTERNAL=
+ALSA_LIBS_OTHER:INTERNAL=
+ALSA_LIBS_PATHS:INTERNAL=
+ALSA_MODULE_NAME:INTERNAL=alsa
+ALSA_PREFIX:INTERNAL=/usr
+ALSA_STATIC_CFLAGS:INTERNAL=-I/usr/include
+ALSA_STATIC_CFLAGS_I:INTERNAL=
+ALSA_STATIC_CFLAGS_OTHER:INTERNAL=
+ALSA_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include
+ALSA_STATIC_LDFLAGS:INTERNAL=-L/usr/lib/x86_64-linux-gnu;-lasound;-lm;-lpthread;-lrt
+ALSA_STATIC_LDFLAGS_OTHER:INTERNAL=
+ALSA_STATIC_LIBDIR:INTERNAL=
+ALSA_STATIC_LIBRARIES:INTERNAL=asound;m;pthread;rt
+ALSA_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib/x86_64-linux-gnu
+ALSA_STATIC_LIBS:INTERNAL=
+ALSA_STATIC_LIBS_L:INTERNAL=
+ALSA_STATIC_LIBS_OTHER:INTERNAL=
+ALSA_STATIC_LIBS_PATHS:INTERNAL=
+ALSA_VERSION:INTERNAL=1.2.15.3
+ALSA_alsa_INCLUDEDIR:INTERNAL=
+ALSA_alsa_LIBDIR:INTERNAL=
+ALSA_alsa_PREFIX:INTERNAL=
+ALSA_alsa_VERSION:INTERNAL=
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -532,10 +566,10 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Details about finding ALSA
-FIND_PACKAGE_MESSAGE_DETAILS_ALSA:INTERNAL=[/usr/lib/x86_64-linux-gnu/libasound.so][/usr/include][v1.2.15.3()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][ ][v()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v2.5.1()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding WrapAtomic
@@ -572,6 +606,10 @@ OPENGL_glx_LIBRARY-ADVANCED:INTERNAL=1
 OPENGL_opengl_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_xmesa_INCLUDE_DIR
 OPENGL_xmesa_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //Qt feature: abstractbutton (from target Qt6::Widgets)
 QT_FEATURE_abstractbutton:INTERNAL=ON
 //Qt feature: abstractslider (from target Qt6::Widgets)
@@ -1414,4 +1452,9 @@ Vulkan_INCLUDE_DIR-ADVANCED:INTERNAL=1
 Vulkan_LIBRARY-ADVANCED:INTERNAL=1
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+__pkg_config_arguments_ALSA:INTERNAL=REQUIRED;alsa
+__pkg_config_checked_ALSA:INTERNAL=1
+//ADVANCED property for variable: pkgcfg_lib_ALSA_asound
+pkgcfg_lib_ALSA_asound-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/lib/x86_64-linux-gnu
 

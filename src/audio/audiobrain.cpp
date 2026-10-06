@@ -1,10 +1,8 @@
-#include "audio.hpp"
-#include "objects.hpp"
+#include "audiobrain.hpp"
 #include <alsa/asoundlib.h>
 #include <thread>
 #include <cstdlib>
 #include <chrono>
-#include <iostream>
 
 #define MINIMP3_IMPLEMENTATION
 #include "minimp3.hpp"
@@ -61,9 +59,11 @@ void AudioPlayer::play(const QString& path){
             }
 
             auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - start_time);
-
-            int percent = int(100.0 * elapsed.count() / track_duration_ms.count());
-            emit progressChanged(percent);
+            
+            if (isPlaying){
+                int percent = int(100.0 * elapsed.count() / track_duration_ms.count());
+                emit progressChanged(percent);
+            }
 
             if (frames_left == 0 && elapsed >= track_duration_ms) {
                 break;
@@ -98,7 +98,7 @@ void AudioPlayer::playSelected(){
 void AudioPlayer::forcedStop(){
     isPlaying = false;
     isPaused  = false;
-    
+
     if (pcm_) {
         snd_pcm_drop(pcm_);
         snd_pcm_prepare(pcm_);
