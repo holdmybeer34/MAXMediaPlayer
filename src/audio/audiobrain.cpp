@@ -59,7 +59,7 @@ void AudioPlayer::play(const QString& path){
             }
 
             auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::steady_clock::now() - start_time);
-            
+
             if (isPlaying){
                 int percent = int(100.0 * elapsed.count() / track_duration_ms.count());
                 emit progressChanged(percent);
@@ -77,6 +77,7 @@ void AudioPlayer::play(const QString& path){
         snd_pcm_close(pcm_);
         free(info.buffer);
 
+        emit progressChanged(0);
         isPlaying = false;
     }).detach();
 }
